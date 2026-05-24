@@ -1,11 +1,20 @@
-<div align="center">
+# ISA Education Platform
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+## Запуск
 
-  <h1>Built with AI Studio</h2>
+1. Скопируйте `.env.example` в `.env.local` и вставьте ваш `ANTHROPIC_API_KEY`
+2. Установите зависимости: `npm install`
+3. Запустите сервер: `npm run dev`
+4. Откройте http://localhost:3000
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Хранение данных
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+Все данные сохраняются в папке `./data/`:
+- `courses.json` — курсы
+- `site-content.json` — видео и события
+- `feedbacks.json` — отзывы студентов
 
-</div>
+## AI генерация курсов
+
+В панели администратора → «Курсы» → введите тему → нажмите «Создать курс с AI».
+AI создаст 3 урока с теорией и 10 вопросов для теста.
